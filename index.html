@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habit Tracker</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="progress-bar-style.css">
 </head>
 <body>
     <header>
-        <h1 id="submit-btn" b>Habit Tracker Application</h1>
+        <h1 id="submit-btn"->Habit Tracker Application</h1>
     </header><hr>
 
     <!-- <form name="sign-in" id="sign-in" action="">
@@ -33,13 +34,72 @@
     <!-- ===============TABLE================ -->
     <table>
         <tr>
-            <th>Habit</th>
-            <th>Streak</th>
-            <th>Note</th>
+            <th>Skill</th>
+            <th id="skill-lvl">Skill Levl</th>
+            <th id="skill-point">Skill Points</th>
         </tr>
 
+        <tr>
+            <td>Strength</td>
+            <td id="strength-lvl">1</td>
+            <td id="strength-pts">0/31</td>
+        </tr>
+
+        <tr>
+            <td>Charisma</td>
+            <td id="charisma-lvl">1</td>
+            <td id="charisma-pts">0/31</td>
+        </tr>
+
+        <tr>
+            <td>Tech</td>
+            <td id="tech-lvl">1</td>
+            <td id="tech-pts">0/31</td>
+        </tr>
     </table>
 
+    <section id="skill-section">
+        <div id="strength-skill-card">
+            <h1>Strength</h1>
+            <div id="myProgress">
+                <div id="myBar">1%</div>
+            </div>
+            <hr>
+            <ul>
+                <li>Strength Task</li>
+                <ul>
+                    <li id="">Task 1 <button id="btn1">#</button></li>
+                    <li id="">Task 1 <button id="btn2">#</button></li>
+                    <li id="">Task 1 <button id="btn3">#</button></li>
+                </ul>
+            </ul>
+        </div>
+
+        <div id="strength-skill-card">
+            <h1>Charisma</h1><hr>
+            <ul>
+                <li>Charisma Task</li>
+                <ul>
+                    <li id="">Task 1 <button id="charismaBtn1">#</button></li>
+                    <li id="">Task 1 <button id="charismaBtn2">#</button></li>
+                    <li id="">Task 1 <button id="charismaBtn3">#</button></li>
+                </ul>
+            </ul>
+        </div>
+        <div id="strength-skill-card">
+            <h1>Tech</h1><hr>
+            <ul>
+                <li>Tech Task</li>
+                <ul>
+                    <li id="">Task 1 <button id="techBtn1">#</button></li>
+                    <li id="">Task 1 <button id="techBtn2">#</button></li>
+                    <li id="">Task 1 <button id="techBtn3">#</button></li>
+                </ul>
+            </ul>
+        </div>
+    </section>
+    <script src="progressBar.js"></script>
+    <script src="leveling.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
