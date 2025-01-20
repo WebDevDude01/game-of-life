@@ -16,3 +16,22 @@
         - #c137ff
         - #a7c251 
         - #ced9ed
+
+
+        .tiny5-regular {
+  font-family: "Tiny5", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-regular {
+  font-family: "Silkscreen", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tiny5-regular {
+  font-family: "Tiny5", serif;
+  font-weight: 400;
+  font-style: normal;
+}
